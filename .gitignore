@@ -106,3 +106,4 @@ dist
 /obj/Debug
 /ImportCityEvents.njsproj
 /ImportCityEvents.sln
+.vs/
