@@ -13,13 +13,14 @@ to start, download the source files into a new directory on your local computer,
 ```
 this starts the import process and add documents to mongo collection.
 
-# Configuration file:
+## Configuration file:
 A configuration file was included . You can include a list of opendata files and mongo collection names:
 ```
     config/import.json
 ```
 
-# Prerequisites: A mongo database must be installed and listening in the application port: 27017. Database url could be setting changing url constant of the following file:
+## Prerequisites:
+A mongo database must be installed and listening in the application port: 27017. Database url could be setting changing url constant of the following file:
 
 ```
     utils/db.js
