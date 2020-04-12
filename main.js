@@ -1,7 +1,7 @@
 //* Import dependencies */
 const async = require('async');
 const db = require('./utils/db.js');
-const Importer = require('./lib/importer.js');
+const Importer = require('./lib/importDB.js');
 
 /* Load the import config */
 const importConfig = require('./config/import.json');
@@ -13,12 +13,15 @@ db(database => {
     importer.setDatabase(database);
 
     /* For each of the enabled import files import them into the database */
-    async.each(importConfig.filter(i => i.enabled), (item, callback) => {
+    async.each(importConfig.filter(item => item.enabled), (item, callback) => {
+
         console.log(`\nImported ${item.collection}`);
         importer.importFile(item, callback);
+      
     }, () => {
         /* Import has completed, close the database connection */
         console.log('Completed all');
         database.close();
     });
+
 });

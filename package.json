@@ -1,5 +1,5 @@
 {
-  "name": "events-loader",
+  "name": "import-city-events",
   "version": "0.0.0",
   "description": "Opendata Events Loader",
   "main": "import.js",
@@ -13,8 +13,6 @@
   "license": "UNLICENSED",
   "dependencies": {
     "async": "^2.6.2",
-    "csv-stream": "^0.1.3",
-    "elasticsearch": "^13.3.1",
     "mongodb": "^2.2.36",
     "underscore": "^1.8.3"
   }
