@@ -3,9 +3,9 @@
 import-city-events
 ```
 
-Example of a node app server that can run on a computer to allow download Opendata JSON files and feed a mongo databse .
+Example of a node app server that can run on a computer to allow download Opendata JSON files and feed a mongo database .
 
-main.js is a node.js application download and process Opendata JSON files and insert documents in a mongo collection.
+import-city-events is a node.js application download and process Opendata JSON files and insert documents in a mongo collection.
 
 to start, download the source files into a new directory on your local computer, and run npm install && node from command line with the main.js file as argument
 ```js
